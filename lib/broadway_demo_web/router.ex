@@ -8,7 +8,6 @@ defmodule BroadwayDemoWeb.Router do
     plug :put_root_layout, {BroadwayDemoWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    # plug BroadwayDemo.CustomPlug
   end
 
   pipeline :api do
@@ -42,7 +41,7 @@ defmodule BroadwayDemoWeb.Router do
       # live_dashboard "/dashboard", metrics: BroadwayDemoWeb.Telemetry
       live_dashboard "/dashboard", metrics: BroadwayDemoWeb.Telemetry,
         additional_pages: [
-          broadway: {BroadwayDashboard, pipelines: [BroadwayCustomProducer]}
+          broadway: {BroadwayDashboard, pipelines: [BroadwayPubSubSimple]}
         ]
     end
   end

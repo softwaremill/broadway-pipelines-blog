@@ -45,6 +45,5 @@ defmodule BroadwayDemoWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug BroadwayDemoWeb.CustomPlug, where: "Endpoint, Before Router"
   plug BroadwayDemoWeb.Router
 end
