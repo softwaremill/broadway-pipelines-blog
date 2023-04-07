@@ -1,13 +1,7 @@
 # BroadwayDemo
 
-To start your Phoenix server:
+This is a project accompanying a blog post @ [softwaremill.com](https://softwaremill.com/constructing-effective-data-processing-workflows-using-elixir-and-broadway/) website.
 
-  * Install dependencies with `mix deps.get`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
 ## Learn more
 
